@@ -1,3 +1,3 @@
-# tslint-config-ark120202
+# @ark120202/tslint-config
 
-> TSLint config used in my projects
+> TSLint config for ark120202
