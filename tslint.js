@@ -89,7 +89,7 @@ const coreRules = {
 };
 
 const consistentCodestyle = {
-  'early-exit': [true, { 'max-length': 2 }],
+  'early-exit': [true, { 'max-length': 5 }],
   'no-accessor-recursion': true,
   'no-collapsible-if': true,
   'no-else-after-return': false,
