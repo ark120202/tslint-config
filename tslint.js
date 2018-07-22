@@ -16,6 +16,7 @@ const latestOverrides = {
   'no-empty-interface': false,
   'no-submodule-imports': false,
   'no-implicit-dependencies': [true, 'dev', 'optional'],
+  'no-namespace': [true, 'allow-declarations'],
 };
 
 const airbnbOverrides = {
