@@ -53,7 +53,6 @@ const coreRules = {
   'no-floating-promises': true,
   'prefer-method-signature': true,
   'no-void-expression': [true, 'ignore-arrow-function-shorthand'],
-  'no-unbound-method': [true, 'ignore-static'],
   'binary-expression-operand-order': true,
   'promise-function-async': [
     true,
@@ -87,6 +86,7 @@ const coreRules = {
   // 'no-default-export': true,
   // 'switch-default': true,
   // 'no-unsafe-any': true,
+  // 'no-unbound-method': [true, 'ignore-static'],
 };
 
 const consistentCodestyle = {
