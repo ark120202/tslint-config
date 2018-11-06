@@ -1,6 +1,6 @@
 {
   "name": "@ark120202/tslint-config",
-  "version": "2.0.5",
+  "version": "2.1.0",
   "description": "TSLint config for ark120202",
   "main": "tslint.js",
   "author": "ark120202",
