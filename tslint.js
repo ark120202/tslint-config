@@ -7,16 +7,19 @@ const latestOverrides = {
   'no-empty': [true, 'allow-empty-catch'],
   'no-implicit-dependencies': [true, 'dev'],
   'interface-name': false,
-  'object-literal-sort-keys': [
-    true,
-    'shorthand-first',
-    'match-declaration-order',
-  ],
+  // FIXME: https://github.com/palantir/tslint/issues/4174
+  // 'object-literal-sort-keys': [
+  //   true,
+  //   'shorthand-first',
+  //   'match-declaration-order',
+  // ],
   'only-arrow-functions': [true, 'allow-declarations'],
   'no-empty-interface': false,
   'no-submodule-imports': false,
   'no-implicit-dependencies': [true, 'dev', 'optional'],
   'no-namespace': [true, 'allow-declarations'],
+  'member-ordering': false,
+  'no-bitwise': false,
 };
 
 const airbnbOverrides = {
@@ -67,17 +70,18 @@ const coreRules = {
   'no-for-in-array': true,
   'restrict-plus-operands': true,
   'no-inferrable-types': true,
-  'strict-boolean-expressions': [
-    true,
-    'allow-null-union',
-    'allow-undefined-union',
-    'allow-mix',
-  ],
+  // FIXME: https://github.com/palantir/tslint/issues/3279
+  // 'strict-boolean-expressions': [
+  //   true,
+  //   'allow-null-union',
+  //   'allow-undefined-union',
+  //   'allow-mix',
+  // ],
   'use-default-type-parameter': true,
   'no-unnecessary-class': true,
   'prefer-switch': true,
 
-  // FIXME: blocked by https://github.com/palantir/tslint/issues/2430
+  // FIXME: https://github.com/palantir/tslint/issues/2430
   // 'no-unnecessary-callback-wrapper': true,
 
   // TODO:
