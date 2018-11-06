@@ -20,6 +20,7 @@ const latestOverrides = {
   'no-namespace': [true, 'allow-declarations'],
   'member-ordering': false,
   'no-bitwise': false,
+  'prefer-const': [true, { destructuring: 'all' }],
 };
 
 const airbnbOverrides = {
