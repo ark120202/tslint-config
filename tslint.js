@@ -78,6 +78,7 @@ const coreRules = {
   //   'allow-undefined-union',
   //   'allow-mix',
   // ],
+  'object-literal-sort-keys': false,
   'use-default-type-parameter': true,
   'no-unnecessary-class': true,
   'prefer-switch': true,
