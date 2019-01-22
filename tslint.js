@@ -38,12 +38,7 @@ const airbnbOverrides = {
   ],
   'import-name': false,
   'no-parameter-reassignment': false,
-  'variable-name': [
-    true,
-    'ban-keywords',
-    'check-format',
-    'allow-leading-underscore',
-  ],
+  'variable-name': [true, 'ban-keywords', 'check-format', 'allow-leading-underscore'],
   'object-shorthand-properties-first': false,
 };
 
@@ -109,11 +104,5 @@ const consistentCodestyle = {
 
 module.exports = {
   extends: ['tslint:latest', 'tslint-config-airbnb', 'tslint-config-prettier'],
-  rules: Object.assign(
-    {},
-    latestOverrides,
-    airbnbOverrides,
-    coreRules,
-    consistentCodestyle,
-  ),
+  rules: Object.assign({}, latestOverrides, airbnbOverrides, coreRules, consistentCodestyle),
 };
