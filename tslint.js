@@ -52,7 +52,8 @@ const coreRules = {
   encoding: true,
   'prefer-template': [true, 'allow-single-concat'],
   'no-boolean-literal-compare': true,
-  'no-redundant-jsdoc': true,
+  // FIXME: https://github.com/palantir/tslint/issues/3419
+  // 'no-redundant-jsdoc': true,
   'max-file-line-count': [true, 1000],
   'no-floating-promises': true,
   'prefer-method-signature': true,
