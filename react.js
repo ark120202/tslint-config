@@ -1,6 +1,7 @@
 module.exports = {
   extends: ['tslint-react'],
   rules: {
+    'jsx-no-multiline-js': false,
     // Prettier
     'jsx-self-close': false,
 
