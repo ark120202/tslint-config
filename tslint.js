@@ -103,6 +103,17 @@ const consistentCodestyle = {
 };
 
 module.exports = {
-  extends: ['tslint:latest', 'tslint-config-airbnb', 'tslint-config-prettier'],
-  rules: Object.assign({}, latestOverrides, airbnbOverrides, coreRules, consistentCodestyle),
+  extends: [
+    'tslint:latest',
+    'tslint-config-airbnb',
+    'tslint-config-prettier',
+    'tslint-plugin-prettier',
+  ],
+  rules: Object.assign(
+    { prettier: true },
+    latestOverrides,
+    airbnbOverrides,
+    coreRules,
+    consistentCodestyle,
+  ),
 };
