@@ -2,10 +2,10 @@
   "name": "@ark120202/tslint-config",
   "version": "2.1.2",
   "description": "TSLint config for ark120202",
-  "main": "tslint.js",
-  "author": "ark120202",
-  "license": "MIT",
   "repository": "https://github.com/ark120202/tslint-config.git",
+  "license": "MIT",
+  "author": "ark120202",
+  "main": "tslint.js",
   "dependencies": {
     "tslint-config-airbnb": "~5.11.1",
     "tslint-config-prettier": "^1.15.0",
