@@ -6,6 +6,15 @@
   "license": "MIT",
   "author": "ark120202",
   "main": "tslint.js",
+  "scripts": {
+    "lint": "node_modules/.bin/prettier **/*.{js,json,yml,md} --check"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "proseWrap": "always",
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
   "dependencies": {
     "tslint-config-airbnb": "~5.11.1",
     "tslint-config-prettier": "^1.15.0",
