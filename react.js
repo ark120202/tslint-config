@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['tslint-react'],
+  extends: ['tslint-react', 'tslint-config-prettier'],
   rules: {
     'jsx-no-multiline-js': false,
     // Prettier
