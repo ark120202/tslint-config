@@ -4,7 +4,7 @@ const latestOverrides = {
   'max-classes-per-file': false,
   'array-type': [true, 'array'],
   'no-console': false,
-  'no-empty': [true, 'allow-empty-catch'],
+  'no-empty': [true, 'allow-empty-catch', 'allow-empty-functions'],
   'no-implicit-dependencies': [true, 'dev'],
   'interface-name': false,
   'object-literal-sort-keys': [true, 'match-declaration-order-only'],
