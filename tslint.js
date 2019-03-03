@@ -7,12 +7,7 @@ const latestOverrides = {
   'no-empty': [true, 'allow-empty-catch'],
   'no-implicit-dependencies': [true, 'dev'],
   'interface-name': false,
-  // FIXME: https://github.com/palantir/tslint/issues/4174
-  // 'object-literal-sort-keys': [
-  //   true,
-  //   'shorthand-first',
-  //   'match-declaration-order',
-  // ],
+  'object-literal-sort-keys': [true, 'match-declaration-order-only'],
   'only-arrow-functions': [true, 'allow-declarations'],
   'no-empty-interface': false,
   'no-submodule-imports': false,
@@ -67,17 +62,18 @@ const coreRules = {
   'no-for-in-array': true,
   'restrict-plus-operands': true,
   'no-inferrable-types': true,
-  // FIXME: https://github.com/palantir/tslint/issues/3279
-  // 'strict-boolean-expressions': [
-  //   true,
-  //   'allow-null-union',
-  //   'allow-undefined-union',
-  //   'allow-mix',
-  // ],
+  'strict-boolean-expressions': [
+    true,
+    'allow-null-union',
+    'allow-undefined-union',
+    'allow-mix',
+    'ignore-rhs',
+  ],
   'object-literal-sort-keys': false,
   'use-default-type-parameter': true,
   'no-unnecessary-class': true,
   'prefer-switch': true,
+  'no-restricted-globals': true,
 
   // FIXME: https://github.com/palantir/tslint/issues/2430
   // 'no-unnecessary-callback-wrapper': true,
