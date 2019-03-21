@@ -34,8 +34,16 @@ const airbnbOverrides = {
   ],
   'import-name': false,
   'no-parameter-reassignment': false,
-  'variable-name': [true, 'ban-keywords', 'check-format', 'allow-leading-underscore'],
+  'variable-name': [
+    true,
+    'ban-keywords',
+    'check-format',
+    'allow-leading-underscore',
+    'require-const-for-all-caps',
+  ],
   'object-shorthand-properties-first': false,
+
+  'no-else-after-return': false,
 };
 
 const coreRules = {
@@ -50,12 +58,7 @@ const coreRules = {
   'prefer-method-signature': true,
   'no-void-expression': [true, 'ignore-arrow-function-shorthand'],
   'binary-expression-operand-order': true,
-  'promise-function-async': [
-    true,
-    'check-function-declaration',
-    'check-function-expression',
-    'check-method-declaration',
-  ],
+  'promise-function-async': true,
   'no-require-imports': true,
   'no-unnecessary-type-assertion': true,
   'no-inferred-empty-object-type': true,
@@ -75,6 +78,9 @@ const coreRules = {
   'no-unnecessary-class': true,
   'prefer-switch': true,
   'no-restricted-globals': true,
+  'no-tautology-expression': true,
+  'static-this': true,
+  'unnecessary-else': true,
 
   // FIXME: https://github.com/palantir/tslint/issues/2430
   // 'no-unnecessary-callback-wrapper': true,
@@ -92,8 +98,6 @@ const consistentCodestyle = {
   'early-exit': [true, { 'max-length': 5 }],
   'no-accessor-recursion': true,
   'no-collapsible-if': true,
-  'no-else-after-return': false,
-  'no-unnecessary-else': true,
   'no-return-undefined': true,
   'no-static-this': true,
   'prefer-while': true,
