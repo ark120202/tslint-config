@@ -7,7 +7,8 @@ const latestOverrides = {
   'no-empty': [true, 'allow-empty-catch', 'allow-empty-functions'],
   'no-implicit-dependencies': [true, 'dev'],
   'interface-name': false,
-  'object-literal-sort-keys': [true, 'match-declaration-order-only'],
+  // TODO:
+  // 'object-literal-sort-keys': [true, 'match-declaration-order-only'],
   'only-arrow-functions': [true, 'allow-declarations'],
   'no-empty-interface': false,
   'no-submodule-imports': false,
@@ -62,13 +63,14 @@ const coreRules = {
   'no-for-in-array': true,
   'restrict-plus-operands': true,
   'no-inferrable-types': true,
-  'strict-boolean-expressions': [
-    true,
-    'allow-null-union',
-    'allow-undefined-union',
-    'allow-mix',
-    'ignore-rhs',
-  ],
+  // TODO:
+  // 'strict-boolean-expressions': [
+  //   true,
+  //   'allow-null-union',
+  //   'allow-undefined-union',
+  //   'allow-mix',
+  //   'ignore-rhs',
+  // ],
   'use-default-type-parameter': true,
   'no-unnecessary-class': true,
   'prefer-switch': true,
