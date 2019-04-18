@@ -1,6 +1,6 @@
 {
   "name": "@ark120202/tslint-config",
-  "version": "3.2.0",
+  "version": "4.0.0",
   "description": "TSLint config for ark120202",
   "repository": "https://github.com/ark120202/tslint-config.git",
   "license": "MIT",
