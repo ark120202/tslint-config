@@ -7,7 +7,7 @@
   "author": "ark120202",
   "main": "tslint.js",
   "scripts": {
-    "lint": "prettier **/*.{js,json,yml,md} --check"
+    "lint": "prettier --check **/*.{js,json,yml,md}"
   },
   "prettier": {
     "printWidth": 100,
@@ -21,13 +21,12 @@
     "tslint-microsoft-contrib": "^6.1.1"
   },
   "devDependencies": {
-    "prettier": "^1.16.1",
+    "prettier": "^1.17.0",
     "tslint": "^5.14.0",
     "tslint-react": "^3.6.0",
     "typescript": "^3.2.4"
   },
   "peerDependencies": {
-    "prettier": "^1.13.7",
     "tslint": "^5.14.0",
     "typescript": "^2.9.2 || ^3.0.1"
   }
