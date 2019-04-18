@@ -5,6 +5,10 @@
   "repository": "https://github.com/ark120202/tslint-config.git",
   "license": "MIT",
   "author": "ark120202",
+  "files": [
+    "tslint.js",
+    "react.js"
+  ],
   "main": "tslint.js",
   "scripts": {
     "lint": "prettier --check **/*.{js,json,yml,md}"
