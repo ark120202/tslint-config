@@ -17,23 +17,9 @@ const latestOverrides = {
   'member-ordering': false,
   'no-bitwise': false,
   'prefer-const': [true, { destructuring: 'all' }],
-};
 
-const airbnbOverrides = {
-  'function-name': [
-    true,
-    {
-      'method-regex': /^_?[a-z][a-zA-Z\d]*$/,
-      'private-method-regex': /^_?[a-z][a-zA-Z\d]*$/,
-      'protected-method-regex': /^_?[a-z][a-zA-Z\d]*$/,
-      'static-method-regex': /^_?[a-z][a-zA-Z\d]*$/,
-
-      // variable-name
-      'function-regex': /.*/,
-    },
-  ],
-  'import-name': false,
-  'no-parameter-reassignment': false,
+  curly: [true, 'ignore-same-line'],
+  'no-this-assignment': [true, 'allow-destructuring'],
   'variable-name': [
     true,
     'ban-keywords',
@@ -41,9 +27,6 @@ const airbnbOverrides = {
     'allow-leading-underscore',
     'require-const-for-all-caps',
   ],
-  'object-shorthand-properties-first': false,
-
-  'no-else-after-return': false,
 };
 
 const coreRules = {
@@ -81,6 +64,7 @@ const coreRules = {
   'no-tautology-expression': true,
   'static-this': true,
   'unnecessary-else': true,
+  'increment-decrement': true,
 
   // FIXME: https://github.com/palantir/tslint/issues/2430
   // 'no-unnecessary-callback-wrapper': true,
@@ -94,6 +78,22 @@ const coreRules = {
   // 'no-unbound-method': [true, 'ignore-static'],
 };
 
+const microsoftContrib = {
+  'prefer-array-literal': true,
+  'function-name': [
+    true,
+    {
+      'method-regex': /^_?[a-z][a-zA-Z\d]*$/,
+      'private-method-regex': /^_?[a-z][a-zA-Z\d]*$/,
+      'protected-method-regex': /^_?[a-z][a-zA-Z\d]*$/,
+      'static-method-regex': /^_?[a-z][a-zA-Z\d]*$/,
+
+      // variable-name
+      'function-regex': /.*/,
+    },
+  ],
+};
+
 const consistentCodestyle = {
   'early-exit': [true, { 'max-length': 5 }],
   'no-accessor-recursion': true,
@@ -104,17 +104,12 @@ const consistentCodestyle = {
 };
 
 module.exports = {
-  extends: [
-    'tslint:latest',
-    'tslint-config-airbnb',
-    'tslint-config-prettier',
-    'tslint-plugin-prettier',
-  ],
+  extends: ['tslint:latest', 'tslint-config-prettier', 'tslint-plugin-prettier'],
   rules: Object.assign(
     { prettier: true },
     latestOverrides,
-    airbnbOverrides,
     coreRules,
+    microsoftContrib,
     consistentCodestyle,
   ),
 };
