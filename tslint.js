@@ -105,11 +105,5 @@ const consistentCodestyle = {
 
 module.exports = {
   extends: ['tslint:latest', 'tslint-config-prettier', 'tslint-plugin-prettier'],
-  rules: Object.assign(
-    { prettier: true },
-    latestOverrides,
-    coreRules,
-    microsoftContrib,
-    consistentCodestyle,
-  ),
+  rules: Object.assign({}, latestOverrides, coreRules, microsoftContrib, consistentCodestyle),
 };
