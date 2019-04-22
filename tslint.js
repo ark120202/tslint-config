@@ -11,6 +11,7 @@ const latestOverrides = {
   'interface-name': false,
   // TODO:
   // 'object-literal-sort-keys': [true, 'match-declaration-order-only'],
+  'object-literal-sort-keys': false,
   'only-arrow-functions': [true, 'allow-declarations'],
   'no-empty-interface': false,
   'no-submodule-imports': false,
