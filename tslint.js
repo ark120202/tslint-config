@@ -1,3 +1,5 @@
+const path = require('path');
+
 // https://github.com/palantir/tslint/blob/e78f9c233935ea071fbc6bec1f67336eac1f9e41/src/configs/latest.ts
 const latestOverrides = {
   forin: false,
@@ -104,6 +106,7 @@ const consistentCodestyle = {
 };
 
 module.exports = {
-  extends: ['tslint:latest', 'tslint-config-prettier'],
+  extends: ['tslint:latest', 'tslint-consistent-codestyle', 'tslint-config-prettier'],
+  rulesDirectory: [path.dirname(require.resolve('tslint-microsoft-contrib'))],
   rules: Object.assign({}, latestOverrides, coreRules, microsoftContrib, consistentCodestyle),
 };
